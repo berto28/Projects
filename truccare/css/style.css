@@ -1,0 +1,138 @@
+body{
+	font-family: 'Damion', cursive;
+}
+.account{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 2;
+}
+.header-area {
+	position: relative;
+}
+
+.header-area .brand-logo{
+	font-family: 'Damion', cursive;
+}
+p{
+	font-size: 16px;
+}
+
+.header-area nav{
+	background: rgba(0,0,0,0);
+	position: absolute;
+	bottom: 0;
+	z-index: 2;
+	transition: ease;
+	-webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px -0px rgba(0,0,0,0); 
+	box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px -0px rgba(0,0,0,0);
+	-webkit-transition: ease 0.5s;
+	-ms-transition: ease 0.5s;
+	-moz-transition: ease 0.5s;
+	-o-transition: ease 0.5s;
+	transition: ease 0.5s;
+}
+
+.parallax-container{
+	height: 80%;
+}
+
+nav ul a:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.header-area .title{
+	
+	color: #ffcdd2;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+}
+
+.title{
+	font-family: 'Damion', cursive;
+	color: #ffcdd2;
+}
+
+.header-area h1{
+	font-size: 7rem;
+}
+
+
+section{
+	padding: 50px 0;
+}
+
+.section01 .text{
+	height: 100%;
+}
+
+.section01 .row{
+	padding-top: 10px;
+}
+
+.section02{
+	background-color: #ffcdd2;
+}
+
+.section04{
+	background-color: #ffcdd2;
+}
+
+.crueltyList li,
+.nonCrueltyList li{
+	font-size: 20px;
+}
+
+* { box-sizing: border-box; }
+
+/* ---- grid ---- */
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+	width: 33.333%;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	max-width: 100%;
+}
+
+.footer{
+	padding: 50px 0 50px 0;
+}
+
+.section01 img,
+.section02 img,
+.section04 img,
+.content-area li,
+.header-area .row{
+	opacity: 0;
+}
+
+
+@media only screen and (min-width: 993px){
+	.container {
+		width: 90%;
+	}
+}
+
+
+@media only screen and (max-width: 600px){
+	.section01 .text{
+		height: auto;
+	}
+}
