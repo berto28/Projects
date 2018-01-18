@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+		
+		<div class="forum">
+			
+			<!--header-area-->
+			<div class="header-area">
+				<div class="container sns-lins-container">
+					<ul class=" sns-links right-align">
+						<li><a href=""><img src="images/fb-icon.png" alt="" ></a></li>
+						<li><a href=""><img src="images/twitter-icon.png" alt=""></a></li>
+					</ul>
+				</div>
+				<nav class="nav container">
+					<div class="nav-wrapper">
+						<a href="index.html" class="brand-logo"><img src="images/logo.png" alt="" class="responsive-img"></a>
+						<ul id="nav-mobile" data-beloworigin="true" class="right hide-on-med-and-down ">
+							<li><a href="index.html" class="black-text">Home</a></li>
+							<li><a href="about.html" class="black-text">About</a></li>
+							<li>
+								<a href="video-thumbs.html"  data-activates='dropdown1' data-beloworigin="true"  class="dropdown-button black-text">
+									Videos <i class="right tiny material-icons chev valign-wrapper">keyboard_arrow_down</i>
+								</a>
+								<ul id='dropdown1' class='dropdown-content'>
+									<li><a href="videos/hijab.html">Hijab</a></li>
+									<li><a href="videos/maling-akala.html">Maling akala</a></li>
+									<li><a href="videos/the-effect.html">The effect</a></li>
+									<li><a href="videos/tatsulok.html">Tatsulok</a></li>
+									<li><a href="videos/series.html">Series</a></li>
+								</ul>
+							</li>
+							<li><a href="misconception.html" class="black-text">Misconception</a></li>
+							<li><a href="forum.html" class="black-text">Forum</a></li>
+							<li><a href="take-action.html" class="black-text">Take action</a></li>
+							<li><a href="contact.html" class="black-text">Contact</a></li>
+							<li><a href="#" id="btnSearch" class="black-text"><i class="large material-icons">search</i></a></li>
+						</ul>
+						<a href="#" data-activates="slide-out" class="button-collapse grey-text right"><i class="material-icons">menu</i></a>
+					</div>
+
+				</nav>
+				<ul id="slide-out" class="side-nav">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="images/side-nav-banner.jpg">
+							</div>
+							<a href="index.html"><img class="circle" src="images/partner-lasalle.png"></a>
+							<a href="index.html"><span class="white-text name">Muslim</span></a>
+							<a href="index.html"><span class="white-text email">info@info.com</span></a>
+						</div>
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="misconception.html">Misconception</a></li>
+					<li><a href="forum.html">Forum</a></li>
+					<li><a href="take-action.html">Take action</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a href="video-thumbs.html" class="collapsible-header">Videos<i class="material-icons">arrow_drop_down</i></a>
+							<div class="collapsible-body">
+								<ul>
+									<li><a href="videos/hijab.html">Hijab</a></li>
+									<li><a href="videos/maling-akala.html">Maling akala</a></li>
+									<li><a href="videos/the-effect.html">The effect</a></li>
+									<li><a href="videos/tatsulok.html">Tatsulok</a></li>
+									<li><a href="videos/series.html">Series</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</ul>
+			</div>
+			<!--header-area-->
+			
+			<!--content-area-->
+			<div class="content-area grey-text text-darken-4 container"><br>
+				<h1 class="center-align">FORUM</h1>
+				<div class="row">
+					<div class="input-field col s12 m6 offset-m3 orange-text text-accent-2">
+						<i class="material-icons prefix black-text">mode_edit</i>
+						<select id="selectTopic">
+							<option selected>Public spaces</option>
+							<option>Education</option>
+							<option>Work</option>
+							<option>Transportation</option>
+						</select>
+						<label>Topic</label>
+					</div>
+				</div>
+				<div class="row forum-input-container">
+					<div class="input-field col s12 m9">
+						<i class="material-icons prefix">forum</i>
+						<textarea id="txtForum" class="materialize-textarea"></textarea>
+						<label for="txtForum">What's in your mind?</label>
+					</div>
+					<div class="col s12 m3">
+						<button id="forumBtnSend" class="btn waves-effect waves-light orange accent-2 bottom right" type="submit" name="action">Send
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
+				</div>
+				<div class="loading center-align hide">
+					<div class="preloader-wrapper big active">
+						<div class="spinner-layer spinner-blue-only valign-wrapper">
+							<div class="circle-clipper left valign-wrapper">
+								<div class="circle"></div>
+							</div><div class="gap-patch">
+							<div class="circle circle-loading"></div>
+							</div><div class="circle-clipper right">
+							<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="prevComment-forum-desktop hide-on-small-only">
+				</div>
+				<div class="prevComment-forum-mobile hide-on-med-and-up">
+				</div>
+				<div id="modalForum" class="modal">
+					<div class="modal-content">
+						<h3>Comment</h3>
+						<div class="row">
+							<div class="col s12 m12">
+								<div class="card-panel grey lighten-4">
+									<div class="row">
+										<div class="col s12 center-align">
+											<img id="imgModalForum"  src="images/loader.png" alt="" class="circle responsive-img"> 
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<h5 id="modalForumName"><blockquote>Ryuuju Takasu</blockquote></h5>
+											<span id="modalForumComment">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas laboriosam repellat nobis corrupti reprehenderit illum consequatur corporis ipsa laborum recusandae deserunt ipsam inventore ex doloremque quibusdam atque et, accusantium molestias?
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row"><br>
+							<div class="input-field col s12 m10">
+								<i class="material-icons prefix">forum</i>
+								<input id="txtReplyForum" type="text" class="validate">
+								<label for="txtReplyForum">Reply</label>
+							</div>
+							<div class="col s12 m2 btn-container">
+								<button id="btnReplyForum" class="btn waves-effect waves-light orange accent-2 bottom right" name="action">Send
+									<i class="material-icons right">send</i>
+								</button>
+							</div>
+						</div><br>
+						<div class="loading center-align">
+							<div class="preloader-wrapper big active">
+								<div class="spinner-layer spinner-blue-only valign-wrapper">
+									<div class="circle-clipper left valign-wrapper">
+										<div class="circle"></div>
+									</div><div class="gap-patch">
+									<div class="circle circle-loading"></div>
+									</div><div class="circle-clipper right">
+									<div class="circle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h4>Replies</h4>
+						<div class="container reply-desktop hide-on-small-only">
+						</div>
+						<div class="container reply-mobile hide-on-med-and-up">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat">close</a>
+					</div>
+				</div>
+			</div>
+			<!--content-area-->
+			
+			<!--footer-->
+			<div class="footer">
+				<div class="container">
+					<h5 class="center-align">
+						&copy; A Peace of Islam 2017. All Rights Reserved.
+						<br>
+						Crafted by Mica Lipana and Anne Soriano
+					</h5>
+				</div>
+			</div>
+			<!--footer-->
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
